@@ -71,5 +71,24 @@
         </tr>
       </table>
     </form>
+
+    <hr />
+
+    <h2>Validation</h2>
+    <form action="/valid">
+      <table>
+        <tr>
+          <td><label for="input">Masukkan sebuah kata</label></td>
+          <td><input type="text" name="input" id="input" minlength="3" maxlength="5" required /></td>
+        </tr>
+        <tr>
+          <td><label for="number">Masukkan sebuah number</label></td>
+          <td><input type="number" name="number" id="number" min="3" max="5" required /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit">Kirim</button></td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
