@@ -8,23 +8,23 @@
   </head>
   <body>
     <h1>Contoh Formulir</h1>
-    <form action="/daftar" method="post">
+    <form action="/daftar" method="get">
       <table>
         <tr>
           <td><label for="name">Nama kamu</label></td>
-          <td><input type="text" placeholder="Nama" id="name" /></td>
+          <td><input type="text" placeholder="Nama" id="name" name="name" /></td>
         </tr>
         <tr>
           <td><label for="email">Email kamu</label></td>
-          <td><input type="email" placeholder="Email" id="email" /></td>
+          <td><input type="email" placeholder="Email" id="email" name="email" /></td>
         </tr>
         <tr>
           <td><label for="password">Password kamu</label></td>
-          <td><input type="password" placeholder="Password" id="password" /></td>
+          <td><input type="password" placeholder="Password" id="password" name="password" /></td>
         </tr>
         <tr>
           <td><label for="nohp">No. HP</label></td>
-          <td><input type="number" placeholder="No. HP" id="nohp" /></td>
+          <td><input type="number" placeholder="No. HP" id="nohp" name="nohp" /></td>
         </tr>
         <tr>
           <td colspan="2"><button type="submit">Kirim</button></td>
