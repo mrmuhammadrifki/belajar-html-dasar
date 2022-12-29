@@ -7,7 +7,7 @@
     <title>Formulir</title>
   </head>
   <body>
-    <h1>Contoh Formulir</h1>
+    <h1>Formulir Registrasi</h1>
     <form action="/daftar" method="get">
       <table>
         <tr>
@@ -28,6 +28,42 @@
         </tr>
         <tr>
           <td colspan="2"><button type="submit">Kirim</button></td>
+        </tr>
+      </table>
+    </form>
+
+    <hr />
+
+    <h2>Pesanan</h2>
+    <form action="/order">
+      <table>
+        <tr>
+          <td><label for="">Baju</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="baju" value="Kaos" /></td>
+          <td><label for="baju">Kaos</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="baju" value="Kemeja" checked /></td>
+          <td><label for="baju">Kemeja</label></td>
+        </tr>
+        <tr>
+          <td><label for="ukuran">Ukuran</label></td>
+          <td>
+            <select name="ukuran">
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L" selected>Large</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="term">Sesuai pesanan</label></td>
+          <td><input type="checkbox" name="term" id="term" value="Sesuai pesanan" checked /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit">Order</button></td>
         </tr>
       </table>
     </form>
